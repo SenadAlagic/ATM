@@ -27,20 +27,31 @@ namespace ATMWinForms.Forms
 			this.korisnik = korisnik;
 		}
 
-		private void label1_Click(object sender, EventArgs e)
-		{
-
-		}
-
 		private void frmCardPicker_Load(object sender, EventArgs e)
 		{
 			LoadComboBox();
 		}
 		void LoadComboBox()
 		{
-			cbCard.DataSource = db.KorisniciKartice.Where(k => k.Korisnik.Id == korisnik.Id).ToList();
-			cbCard.DisplayMember = "Banka";
-			cbCard.ValueMember = "Id";
+			cbCard.DataSource = db.KorisniciKartice.Where(k => k.Korisnik.Id == korisnik.Id).Select(k=>k.Kartica).ToList();
+			//cbCard.DisplayMember = "Banka";
+			//cbCard.ValueMember = "Id";
+		}
+
+		private void btnChoose_Click(object sender, EventArgs e)
+		{
+			if (!Validator.Validate(txtPIN, err, "Obavezan PIN"))
+				return;
+			var kartica = cbCard.SelectedItem as Kartica;
+			foreach (var item in db.KorisniciKartice.ToList())
+			{
+				if(item.Kartica.Id==kartica.Id && item.Korisnik.Id==korisnik.Id)
+				{
+
+				}
+				MessageBox.Show("Ukucali ste pogresan PIN, odjavljivanje","Odjava",MessageBoxButtons.OK,MessageBoxIcon.Error);
+				Application.Exit();
+			}
 		}
 	}
 }

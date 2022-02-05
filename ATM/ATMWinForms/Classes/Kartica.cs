@@ -14,5 +14,9 @@ namespace ATMWinForms.Classes
 		public int PIN { get; set; }
 		public string Banka { get; set; }
 		public int Novac { get; set; }
+		public override string ToString()
+		{
+			return Banka;
+		}
 	}
 }

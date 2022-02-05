@@ -29,11 +29,14 @@ namespace ATMWinForms.Forms
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtPIN = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.cbCard = new System.Windows.Forms.ComboBox();
 			this.btnChoose = new System.Windows.Forms.Button();
+			this.err = new System.Windows.Forms.ErrorProvider(this.components);
+			((System.ComponentModel.ISupportInitialize)(this.err)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -44,7 +47,6 @@ namespace ATMWinForms.Forms
 			this.label1.Size = new System.Drawing.Size(30, 17);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "PIN";
-			this.label1.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// txtPIN
 			// 
@@ -78,6 +80,11 @@ namespace ATMWinForms.Forms
 			this.btnChoose.TabIndex = 4;
 			this.btnChoose.Text = "Choose";
 			this.btnChoose.UseVisualStyleBackColor = true;
+			this.btnChoose.Click += new System.EventHandler(this.btnChoose_Click);
+			// 
+			// err
+			// 
+			this.err.ContainerControl = this;
 			// 
 			// frmCardPicker
 			// 
@@ -92,6 +99,7 @@ namespace ATMWinForms.Forms
 			this.Name = "frmCardPicker";
 			this.Text = "frmCardPicker";
 			this.Load += new System.EventHandler(this.frmCardPicker_Load);
+			((System.ComponentModel.ISupportInitialize)(this.err)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -104,5 +112,6 @@ namespace ATMWinForms.Forms
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.ComboBox cbCard;
 		private System.Windows.Forms.Button btnChoose;
+		private System.Windows.Forms.ErrorProvider err;
 	}
 }
