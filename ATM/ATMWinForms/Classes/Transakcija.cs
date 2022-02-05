@@ -10,6 +10,7 @@ namespace ATMWinForms.Classes
 	[Table("Transakcije")]
 	public class Transakcija
 	{
+		public int Id { get; set; }
 		public Korisnik Korisnik { get; set; }
 		public Kartica Kartica { get; set; }
 		public string Datum{ get; set; }
