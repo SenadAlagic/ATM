@@ -1,0 +1,17 @@
+D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.Properties.Resources.resources
+D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.csproj.GenerateResource.cache
+D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.csproj.CoreCompileInputs.cache
+D:\Senad\ATM\ATM\ATMWinForms\bin\Debug\ATMWinForms.exe.config
+D:\Senad\ATM\ATM\ATMWinForms\bin\Debug\ATMWinForms.exe
+D:\Senad\ATM\ATM\ATMWinForms\bin\Debug\ATMWinForms.pdb
+D:\Senad\ATM\ATM\ATMWinForms\bin\Debug\EntityFramework.dll
+D:\Senad\ATM\ATM\ATMWinForms\bin\Debug\EntityFramework.SqlServer.dll
+D:\Senad\ATM\ATM\ATMWinForms\bin\Debug\System.Data.SQLite.dll
+D:\Senad\ATM\ATM\ATMWinForms\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Senad\ATM\ATM\ATMWinForms\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Senad\ATM\ATM\ATMWinForms\bin\Debug\EntityFramework.xml
+D:\Senad\ATM\ATM\ATMWinForms\bin\Debug\EntityFramework.SqlServer.xml
+D:\Senad\ATM\ATM\ATMWinForms\bin\Debug\System.Data.SQLite.xml
+D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.csproj.CopyComplete
+D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.exe
+D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.pdb
