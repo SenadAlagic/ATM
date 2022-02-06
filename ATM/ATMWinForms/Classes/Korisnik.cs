@@ -18,5 +18,9 @@ namespace ATMWinForms.Classes
 		public string Username { get; set; }
 		public string Password { get; set; }
 		public virtual List<KorisnikKartica> KorisnikoveKartice { get; set; }
+		public override string ToString()
+		{
+			return $"{Ime} {Prezime}";
+		}
 	}
 }
