@@ -51,6 +51,7 @@ namespace ATMWinForms.Forms
 				}
 				MessageBox.Show("Ukucali ste pogresan PIN, odjavljivanje","Odjava",MessageBoxButtons.OK,MessageBoxIcon.Error);
 				Application.Exit();
+				break;
 			}
 		}
 	}

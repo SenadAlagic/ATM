@@ -18,3 +18,4 @@ D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.csproj.CoreCompileInputs.cach
 D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.csproj.CopyComplete
 D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.exe
 D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.pdb
+D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.csproj.AssemblyReference.cache

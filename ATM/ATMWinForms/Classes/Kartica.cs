@@ -11,7 +11,7 @@ namespace ATMWinForms.Classes
 	public class Kartica
 	{
 		public int Id { get; set; }
-		public int PIN { get; set; }
+		public string PIN { get; set; }
 		public string Banka { get; set; }
 		public int Novac { get; set; }
 		public override string ToString()

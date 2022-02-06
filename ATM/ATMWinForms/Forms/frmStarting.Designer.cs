@@ -96,6 +96,7 @@ namespace ATMWinForms.Forms
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnLogIn);
 			this.Name = "frmStarting";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "frmStarting";
 			this.Load += new System.EventHandler(this.frmStarting_Load);
 			((System.ComponentModel.ISupportInitialize)(this.err)).EndInit();

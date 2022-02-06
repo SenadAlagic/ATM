@@ -42,7 +42,7 @@ namespace ATMWinForms.Forms
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(76, 92);
+			this.label1.Location = new System.Drawing.Point(53, 70);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(30, 17);
 			this.label1.TabIndex = 0;
@@ -50,15 +50,15 @@ namespace ATMWinForms.Forms
 			// 
 			// txtPIN
 			// 
-			this.txtPIN.Location = new System.Drawing.Point(138, 92);
+			this.txtPIN.Location = new System.Drawing.Point(115, 70);
 			this.txtPIN.Name = "txtPIN";
-			this.txtPIN.Size = new System.Drawing.Size(121, 22);
+			this.txtPIN.Size = new System.Drawing.Size(159, 22);
 			this.txtPIN.TabIndex = 1;
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(76, 62);
+			this.label2.Location = new System.Drawing.Point(53, 40);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(42, 17);
 			this.label2.TabIndex = 2;
@@ -67,16 +67,16 @@ namespace ATMWinForms.Forms
 			// cbCard
 			// 
 			this.cbCard.FormattingEnabled = true;
-			this.cbCard.Location = new System.Drawing.Point(138, 62);
+			this.cbCard.Location = new System.Drawing.Point(115, 40);
 			this.cbCard.Name = "cbCard";
-			this.cbCard.Size = new System.Drawing.Size(121, 24);
+			this.cbCard.Size = new System.Drawing.Size(159, 24);
 			this.cbCard.TabIndex = 3;
 			// 
 			// btnChoose
 			// 
-			this.btnChoose.Location = new System.Drawing.Point(79, 120);
+			this.btnChoose.Location = new System.Drawing.Point(56, 98);
 			this.btnChoose.Name = "btnChoose";
-			this.btnChoose.Size = new System.Drawing.Size(180, 36);
+			this.btnChoose.Size = new System.Drawing.Size(218, 36);
 			this.btnChoose.TabIndex = 4;
 			this.btnChoose.Text = "Choose";
 			this.btnChoose.UseVisualStyleBackColor = true;
@@ -90,13 +90,14 @@ namespace ATMWinForms.Forms
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(334, 206);
+			this.ClientSize = new System.Drawing.Size(334, 158);
 			this.Controls.Add(this.btnChoose);
 			this.Controls.Add(this.cbCard);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.txtPIN);
 			this.Controls.Add(this.label1);
 			this.Name = "frmCardPicker";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "frmCardPicker";
 			this.Load += new System.EventHandler(this.frmCardPicker_Load);
 			((System.ComponentModel.ISupportInitialize)(this.err)).EndInit();
