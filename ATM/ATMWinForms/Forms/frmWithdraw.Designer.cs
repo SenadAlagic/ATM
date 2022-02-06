@@ -101,6 +101,7 @@ namespace ATMWinForms.Forms
 			this.btnCustom.TabIndex = 5;
 			this.btnCustom.Text = "Custom amount";
 			this.btnCustom.UseVisualStyleBackColor = true;
+			this.btnCustom.Click += new System.EventHandler(this.btnCustom_Click);
 			// 
 			// label1
 			// 

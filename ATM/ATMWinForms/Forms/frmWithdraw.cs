@@ -51,7 +51,21 @@ namespace ATMWinForms.Forms
 		}
 		private void Withdraw(object sender, EventArgs e)
 		{
-			throw new NotImplementedException();
+			if ((sender as Button).Text == "10")
+				korisnikkartica.Kartica.Novac -= 10;
+			else if ((sender as Button).Text == "20")
+				korisnikkartica.Kartica.Novac -= 20;
+			else if ((sender as Button).Text == "50")
+				korisnikkartica.Kartica.Novac -= 50;
+			else if ((sender as Button).Text == "100")
+				korisnikkartica.Kartica.Novac -= 100;
+			else if ((sender as Button).Text == "200")
+				korisnikkartica.Kartica.Novac -= 200;
+		}
+
+		private void btnCustom_Click(object sender, EventArgs e)
+		{
+			new frmAmount().Show();
 		}
 	}
 }

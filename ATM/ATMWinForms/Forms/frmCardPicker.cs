@@ -47,7 +47,9 @@ namespace ATMWinForms.Forms
 			{
 				if(item.Kartica.Id==kartica.Id && item.Korisnik.Id==korisnik.Id)
 				{
-
+					this.Hide();
+					new frmMain(korisnik, item).ShowDialog();
+					this.Show();
 				}
 				MessageBox.Show("Ukucali ste pogresan PIN, odjavljivanje","Odjava",MessageBoxButtons.OK,MessageBoxIcon.Error);
 				Application.Exit();

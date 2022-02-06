@@ -21,7 +21,9 @@ namespace ATMWinForms.Forms
 
 		private void btnEnter_Click(object sender, EventArgs e)
 		{
-			if (!Validator.Validate(txtAmount, err, "Must enter a value")) ;
+			if (!Validator.Validate(txtAmount, err, "Must enter a value"))
+				return;
+			amount = int.Parse(txtAmount.Text);
 		}
 	}
 }
