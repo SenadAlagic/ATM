@@ -20,3 +20,8 @@ D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.exe
 D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.pdb
 D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.csproj.AssemblyReference.cache
 D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.Forms.frmMain.resources
+D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.Forms.frmAmount.resources
+D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.Forms.frmWithdraw.resources
+D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.Forms.frmChangePIN.resources
+D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.Forms.frmPrintBalance.resources
+D:\Senad\ATM\ATM\ATMWinForms\obj\Debug\ATMWinForms.Forms.frmPrintStatement.resources

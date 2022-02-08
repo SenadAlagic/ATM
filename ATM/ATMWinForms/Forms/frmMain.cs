@@ -14,7 +14,6 @@ namespace ATMWinForms.Forms
 	public partial class frmMain : Form
 	{
 		private Korisnik korisnik;
-		private KorisnikKartica korisnikkartica;
 		public Kartica kartica;
 
 		public frmMain()
@@ -22,17 +21,16 @@ namespace ATMWinForms.Forms
 			InitializeComponent();
 		}
 
-		public frmMain(Korisnik korisnik, KorisnikKartica item) : this()
+		public frmMain(Korisnik korisnik, Kartica item) : this()
 		{
 			this.korisnik = korisnik;
-			this.korisnikkartica = item;
-			this.kartica = item.Kartica;
+			this.kartica = item;
 		}
 
 		private void btnWithdraw_Click(object sender, EventArgs e)
 		{
 			this.Hide();
-			new frmWithdraw(korisnikkartica).ShowDialog();
+			new frmWithdraw(kartica, korisnik).ShowDialog();
 			this.Show();
 		}
 

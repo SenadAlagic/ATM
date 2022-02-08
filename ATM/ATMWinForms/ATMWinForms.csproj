@@ -129,8 +129,17 @@
     <EmbeddedResource Include="Forms\frmCardPicker.resx">
       <DependentUpon>frmCardPicker.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChangePIN.resx">
+      <DependentUpon>frmChangePIN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrintBalance.resx">
+      <DependentUpon>frmPrintBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrintStatement.resx">
+      <DependentUpon>frmPrintStatement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmStarting.resx">
       <DependentUpon>frmStarting.cs</DependentUpon>

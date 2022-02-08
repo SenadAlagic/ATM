@@ -64,13 +64,16 @@ namespace ATMWinForms.Forms
 			this.txtUsername.Name = "txtUsername";
 			this.txtUsername.Size = new System.Drawing.Size(187, 22);
 			this.txtUsername.TabIndex = 2;
+			this.txtUsername.Text = "test";
 			// 
 			// txtPassword
 			// 
 			this.txtPassword.Location = new System.Drawing.Point(112, 96);
 			this.txtPassword.Name = "txtPassword";
+			this.txtPassword.PasswordChar = '*';
 			this.txtPassword.Size = new System.Drawing.Size(187, 22);
 			this.txtPassword.TabIndex = 4;
+			this.txtPassword.Text = "test";
 			// 
 			// label2
 			// 
@@ -96,7 +99,7 @@ namespace ATMWinForms.Forms
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnLogIn);
 			this.Name = "frmStarting";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frmStarting";
 			this.Load += new System.EventHandler(this.frmStarting_Load);
 			((System.ComponentModel.ISupportInitialize)(this.err)).EndInit();

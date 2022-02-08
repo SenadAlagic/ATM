@@ -39,7 +39,7 @@ namespace ATMWinForms.Forms
 					MessageBox.Show("Uspjesno ste se logirali", "Uspjeh", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					this.Hide();
 					new frmCardPicker(item as Korisnik).ShowDialog();
-					this.Show();
+					this.Close();
 				}
 			}
 		}

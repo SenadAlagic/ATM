@@ -76,6 +76,7 @@ namespace ATMWinForms.Forms
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnEnter);
 			this.Name = "frmAmount";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frmAmount";
 			((System.ComponentModel.ISupportInitialize)(this.err)).EndInit();
 			this.ResumeLayout(false);

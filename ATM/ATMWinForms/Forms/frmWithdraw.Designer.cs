@@ -126,6 +126,7 @@ namespace ATMWinForms.Forms
 			this.Controls.Add(this.btn20);
 			this.Controls.Add(this.btn10);
 			this.Name = "frmWithdraw";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frmWithdraw";
 			this.ResumeLayout(false);
 			this.PerformLayout();

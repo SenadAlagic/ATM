@@ -43,17 +43,16 @@ namespace ATMWinForms.Forms
 			if (!Validator.Validate(txtPIN, err, "Obavezan PIN"))
 				return;
 			var kartica = cbCard.SelectedItem as Kartica;
-			foreach (var item in db.KorisniciKartice.ToList())
+			if(kartica.PIN==txtPIN.Text)
 			{
-				if(item.Kartica.Id==kartica.Id && item.Korisnik.Id==korisnik.Id)
-				{
-					this.Hide();
-					new frmMain(korisnik, item).ShowDialog();
-					this.Show();
-				}
-				MessageBox.Show("Ukucali ste pogresan PIN, odjavljivanje","Odjava",MessageBoxButtons.OK,MessageBoxIcon.Error);
+				this.Hide();
+				new frmMain(korisnik, kartica).ShowDialog();
+				this.Close();
+			}
+			else
+			{
+				MessageBox.Show("Ukucali ste pogresan PIN, odjavljivanje", "Odjava", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				Application.Exit();
-				break;
 			}
 		}
 	}

@@ -13,7 +13,7 @@ namespace ATMWinForms.Forms
 {
 	public partial class frmAmount : Form
 	{
-		private int amount;
+		public int Amount { get; set; }
 		public frmAmount()
 		{
 			InitializeComponent();
@@ -23,7 +23,9 @@ namespace ATMWinForms.Forms
 		{
 			if (!Validator.Validate(txtAmount, err, "Must enter a value"))
 				return;
-			amount = int.Parse(txtAmount.Text);
+			Amount = int.Parse(txtAmount.Text);
+			this.DialogResult = DialogResult.OK;
+			this.Close();
 		}
 	}
 }

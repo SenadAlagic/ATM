@@ -97,7 +97,7 @@ namespace ATMWinForms.Forms
 			this.Controls.Add(this.txtPIN);
 			this.Controls.Add(this.label1);
 			this.Name = "frmCardPicker";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frmCardPicker";
 			this.Load += new System.EventHandler(this.frmCardPicker_Load);
 			((System.ComponentModel.ISupportInitialize)(this.err)).EndInit();
