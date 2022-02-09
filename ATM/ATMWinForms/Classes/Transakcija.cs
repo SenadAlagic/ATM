@@ -14,6 +14,7 @@ namespace ATMWinForms.Classes
 		public Korisnik Korisnik { get; set; }
 		public Kartica Kartica { get; set; }
 		public string Datum{ get; set; }
+		public string Type { get; set; }
 		public int Kolicina { get; set; }
 	}
 }

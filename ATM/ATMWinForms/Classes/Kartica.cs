@@ -13,6 +13,7 @@ namespace ATMWinForms.Classes
 		public int Id { get; set; }
 		public string PIN { get; set; }
 		public string Banka { get; set; }
+		//public string BrojKartice{ get; set; }
 		public int Novac { get; set; }
 		public override string ToString()
 		{

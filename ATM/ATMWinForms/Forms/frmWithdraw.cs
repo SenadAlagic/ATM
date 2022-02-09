@@ -63,11 +63,13 @@ namespace ATMWinForms.Forms
 				{
 					Kartica=kartica,
 					Korisnik=korisnik,
-					Datum = DateTime.Now.ToString("dd-MM-yyyy"),
-					Kolicina=toWithdraw
+					Datum = DateTime.Now.ToString(),
+					Kolicina=toWithdraw,
+					Type="Withdrawal"
 				};
 				db.Transakcije.Add(transakcija);
 				db.SaveChanges();
+				this.Close();
 			}
 			else
 				MessageBox.Show("Insufficient funds on your card","Error",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
@@ -95,7 +97,17 @@ namespace ATMWinForms.Forms
 				{
 					kartica.Novac -= forma.Amount;
 					MessageBox.Show("Withdrawal succesfull", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					var transakcija = new Transakcija()
+					{
+						Kartica = kartica,
+						Korisnik = korisnik,
+						Datum = DateTime.Now.ToString(),
+						Kolicina = forma.Amount,
+						Type = "Withdrawal"
+					};
+					db.Transakcije.Add(transakcija);
 					db.SaveChanges();
+					this.Close();
 				}
 				else
 					MessageBox.Show("Insufficient funds on your card", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

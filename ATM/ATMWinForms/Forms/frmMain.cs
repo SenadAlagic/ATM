@@ -41,22 +41,23 @@ namespace ATMWinForms.Forms
 
 		private void btnPrintStatement_Click(object sender, EventArgs e)
 		{
+			//dgv with transactions 
 			this.Hide();
-			new frmPrintStatement().ShowDialog();
+			new frmPrintStatement(kartica).ShowDialog();
 			this.Show();
 		}
 
 		private void btnChangePIN_Click(object sender, EventArgs e)
 		{
 			this.Hide();
-			new frmChangePIN().ShowDialog();
+			new frmChangePIN(kartica).ShowDialog();
 			this.Show();
 		}
 
-		private void btnPrintBalance_Click(object sender, EventArgs e)
+		private void btnDeposit_Click(object sender, EventArgs e)
 		{
 			this.Hide();
-			new frmPrintBalance().ShowDialog();
+			new frmDeposit(kartica,korisnik).ShowDialog();
 			this.Show();
 		}
 

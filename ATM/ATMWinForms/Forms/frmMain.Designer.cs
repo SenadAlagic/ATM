@@ -32,7 +32,7 @@ namespace ATMWinForms.Forms
 			this.btnWithdraw = new System.Windows.Forms.Button();
 			this.btnBalance = new System.Windows.Forms.Button();
 			this.btnPrintStatement = new System.Windows.Forms.Button();
-			this.btnPrintBalance = new System.Windows.Forms.Button();
+			this.btnDeposit = new System.Windows.Forms.Button();
 			this.btnChangePIN = new System.Windows.Forms.Button();
 			this.btnExit = new System.Windows.Forms.Button();
 			this.lblUser = new System.Windows.Forms.Label();
@@ -68,19 +68,19 @@ namespace ATMWinForms.Forms
 			this.btnPrintStatement.UseVisualStyleBackColor = true;
 			this.btnPrintStatement.Click += new System.EventHandler(this.btnPrintStatement_Click);
 			// 
-			// btnPrintBalance
+			// btnDeposit
 			// 
-			this.btnPrintBalance.Location = new System.Drawing.Point(285, 123);
-			this.btnPrintBalance.Name = "btnPrintBalance";
-			this.btnPrintBalance.Size = new System.Drawing.Size(171, 41);
-			this.btnPrintBalance.TabIndex = 3;
-			this.btnPrintBalance.Text = "Print balance";
-			this.btnPrintBalance.UseVisualStyleBackColor = true;
-			this.btnPrintBalance.Click += new System.EventHandler(this.btnPrintBalance_Click);
+			this.btnDeposit.Location = new System.Drawing.Point(285, 66);
+			this.btnDeposit.Name = "btnDeposit";
+			this.btnDeposit.Size = new System.Drawing.Size(171, 41);
+			this.btnDeposit.TabIndex = 3;
+			this.btnDeposit.Text = "Deposit";
+			this.btnDeposit.UseVisualStyleBackColor = true;
+			this.btnDeposit.Click += new System.EventHandler(this.btnDeposit_Click);
 			// 
 			// btnChangePIN
 			// 
-			this.btnChangePIN.Location = new System.Drawing.Point(285, 66);
+			this.btnChangePIN.Location = new System.Drawing.Point(285, 120);
 			this.btnChangePIN.Name = "btnChangePIN";
 			this.btnChangePIN.Size = new System.Drawing.Size(171, 41);
 			this.btnChangePIN.TabIndex = 4;
@@ -116,7 +116,7 @@ namespace ATMWinForms.Forms
 			this.Controls.Add(this.lblUser);
 			this.Controls.Add(this.btnExit);
 			this.Controls.Add(this.btnChangePIN);
-			this.Controls.Add(this.btnPrintBalance);
+			this.Controls.Add(this.btnDeposit);
 			this.Controls.Add(this.btnPrintStatement);
 			this.Controls.Add(this.btnBalance);
 			this.Controls.Add(this.btnWithdraw);
@@ -134,7 +134,7 @@ namespace ATMWinForms.Forms
 		private System.Windows.Forms.Button btnWithdraw;
 		private System.Windows.Forms.Button btnBalance;
 		private System.Windows.Forms.Button btnPrintStatement;
-		private System.Windows.Forms.Button btnPrintBalance;
+		private System.Windows.Forms.Button btnDeposit;
 		private System.Windows.Forms.Button btnChangePIN;
 		private System.Windows.Forms.Button btnExit;
 		private System.Windows.Forms.Label lblUser;
